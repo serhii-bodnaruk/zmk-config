@@ -97,7 +97,7 @@
 // -----------------------------------------------------------------------------------------
 // | LCMD/`~   |  '"  |  ,<  |  .>  |  P  |  Y  |   |  F  |  G   |  C  |  R  |  L  | RCMD//?   |
 // | CTRL/ESC  |  A   |  O   |  E   |  U  |  I  |   |  D  |  H   |  T  |  N  |  S  | CTRL/-_   |
-// | SHFT/=+   |  :;  |  Q   |  J   |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | RSHFT/|\  |
+// | SHFT/=+   |sym/:;|  Q   |  J   |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | RSHFT/|\  |
 //                       | QWRT  | SPACE  | BSPC |   | TAB | ENT  | CAPS |
                         bindings = <
    &rpi LCMD GRAVE   &dqtsqt            &lt NUMBERS COMMA &lt ARROWS DOT   &kp P      &kp Y       &kp F   &kp G    &kp C    &kp R    &kp L          &rpi RCMD SLASH
@@ -141,13 +141,13 @@
                 symbols_layer {
 // -----------------------------------------------------------------------------------------
 // |      |  $  |  &  |  %  |  @  |  [  |   |  ]  |  *   |  #   |  !  |  ^  |      |
-// |      |     |     |     |     |  (  |   |  {  | CMD A| CMD C|CMD V|     |      |
-// |      |     |  ~  |  $  |     |  )  |   |  }  |      |  ^   |  `  |     |      |
+// |      |     |     |     |     |  {  |   |  }  | CMD A| CMD C|CMD V|     |      |
+// |      |     |  ~  |  $  |     |  (  |   |  )  |      |  ^   |  `  |     |      |
 //                    | DVK | SPACE | BSPC |   | TAB | ENT  | ALT |
                         bindings = <
    &trans  &kp DLLR &kp AMPS &kp PRCNT &kp AT &kp LBKT    &kp RBKT &kp STAR &kp HASH &kp EXCL &kp CARET &trans
-   &trans  &trans   &trans   &trans    &trans &kp LPAR    &kp LBRC &kp LG(A)   &kp LG(C)   &kp LG(V)   &trans    &trans
-   &trans  &trans   &kp TILDE &kp DLLR &trans &kp RPAR    &kp RBRC &trans   &kp CARET   &kp GRAVE   &trans    &trans
+   &trans  &trans   &trans   &trans    &trans &kp LPAR    &kp RPAR &kp LG(A)   &kp LG(C)   &kp LG(V)   &trans    &trans
+   &trans  &trans   &kp TILDE &kp DLLR &trans &kp LBRC    &kp RBRC &trans   &kp CARET   &kp GRAVE   &trans    &trans
                                   &trans &trans &trans    &trans &trans &trans
                         >;
                 };
